@@ -1,0 +1,13 @@
+<view class='wrap'>
+    <scroll-view scroll-y="true" bindscrolltolower="lower" style="height:{{windowHeight}};" lower-threshold="200">
+        <navigator wx:for="{{arr_res}}" wx:key="key" url="../content/content?title={{item.name}}">
+            <view class="main">
+                <image class="img" src="{{item.img}}" />
+                <view class="text">
+                    <text class="title">{{item.name}}</text>
+                    <text class="subtitle">{{item.priliao}}</text>
+                </view>
+            </view>
+        </navigator>
+    </scroll-view>
+</view>
